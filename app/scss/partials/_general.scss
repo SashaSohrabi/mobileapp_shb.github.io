@@ -1,3 +1,10 @@
+@import "sections/header";
+@import "sections/app-features";
+@import "sections/brands";
+@import "sections/hero";
+@import "sections/footer";
+@import "sections/copyright";
+
 @include helveticaNeueThin;
 @include olivier;
 
@@ -28,11 +35,4 @@ a {
 
 body {
   font-family: 'Montserrat', sans-serif;
-}
-
-h1 {
-  color: purple;
-  font-size: 60px;
-  position: relative;
-  margin: 0 auto;
 }
