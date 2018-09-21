@@ -1,0 +1,9 @@
+//pixel to em converter
+@function em($pixels, $context: 16px) {
+  @return ($pixels / $context) * 1em;
+}
+
+// column width calculator
+@function col-width($columns: 12, $page-width: 100%, $gap: 1%) {
+  @return ($page-width - $gap * ($columns - 1)) / $columns;
+}
