@@ -1,0 +1,32 @@
+// === MEDIA BREAKPOINTS ===
+
+@mixin small-screens() {
+  @media only screen and (max-width: 576px) {
+    @content;
+  }
+}
+
+@mixin medium-screens() {
+  @media only screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin large-screens() {
+  @media only screen and (max-width: 820px) {
+    @content;
+  }
+}
+
+@mixin extra-large-screens() {
+  @media only screen and (max-width: 1200px) {
+    @content;
+  }
+}
+
+
+// === GOOGLE FONTS ===
+@mixin google-font($font) {
+  $font: unquote($font);
+  @import url(https://fonts.googleapis.com/css?family=#{$font});
+}
