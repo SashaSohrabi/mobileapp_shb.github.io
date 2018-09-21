@@ -6,8 +6,29 @@
   font-family: 'Olivier';
   src: local("Olivier.ttf"), url("../assets/fonts/Olivier.ttf") format("truetype"); }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+strong,
+b {
+  font-weight: 700; }
+
+em,
+i {
+  font-style: italic; }
+
+p,
+ul li,
+ol li {
+  font-size: 17px;
+  line-height: 24px; }
+
+a {
+  text-decoration: none; }
+
 body {
-  background: yellow; }
+  font-family: 'Montserrat', sans-serif; }
 
 h1 {
   color: purple;
