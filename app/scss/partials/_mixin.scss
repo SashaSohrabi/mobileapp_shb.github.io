@@ -26,7 +26,25 @@
 
 
 // === GOOGLE FONTS ===
+
 @mixin google-font($font) {
   $font: unquote($font);
   @import url(https://fonts.googleapis.com/css?family=#{$font});
+}
+
+
+// === FONTS ===
+
+@mixin helveticaNeueThin() {
+  @font-face {
+    font-family: 'HelveticaNeue-Thin';
+    src: local('HelveticaNeue-Thin.otf'), url('../assets/fonts/HelveticaNeue-Thin.otf') format('opentype');
+  }
+}
+
+@mixin olivier() {
+  @font-face {
+    font-family: 'Olivier';
+    src: local('Olivier.ttf'), url('../assets/fonts/Olivier.ttf') format('truetype');
+  }
 }
