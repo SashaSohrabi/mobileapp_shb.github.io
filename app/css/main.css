@@ -1,5 +1,8 @@
 body {
-  background: #000; }
+  background: red; }
 
 h1 {
-  color: red; }
+  color: purple;
+  font-size: 60px;
+  position: relative;
+  margin: 0 auto; }
