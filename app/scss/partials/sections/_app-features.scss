@@ -1,0 +1,59 @@
+#app-features {
+  @include container;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.app-features {
+  &__title {
+    color: #8a8a8a;
+    margin-bottom: 40px;
+  }
+
+  &__txt {
+    font-family: 'HelveticaNeue-Thin';
+    letter-spacing: .5px;
+    font-size: 22px;
+    line-height: 28px;
+    padding: 0 130px;
+  }
+}
+
+.features-wrapper {
+  overflow: hidden;
+  margin-top: 50px;
+
+  &__title {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 30px 0;
+  }
+
+  &__txt {
+    font-family: 'HelveticaNeue-Thin';
+    letter-spacing: .5px;
+    font-size: 18px;
+    line-height: 24px;
+    color: #646464;
+  }
+
+  &__col {
+    width: 33.33%;
+    float: left;
+    padding: 0 45px;
+  }
+
+  &__img-svg {
+    top: 10px;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 180px;
+    height: 180px;
+    &:hover {
+      transform: scale3d(1.1, 1.1, 1.1);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    }
+  }
+}
