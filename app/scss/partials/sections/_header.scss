@@ -1,5 +1,143 @@
-h1 {
-  color: red;
-  margin: 0 80px;
+.header {
+  background: linear-gradient(rgba(218, 51, 46, 0.6), rgba(218, 51, 46, 0.6)), url('../images/png/hero-bg.png') fixed center;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  .container {
+    @include container;
+  }
+
+  &-logo {
+    float: left;
+  }
+
+  &-menu {
+    $self: &;
+
+    &__nav {
+      float: right;
+
+      #{ $self }__item {
+        display: inline-block;
+        position: relative;
+        margin-left: 30px;
+
+        #{ $self }__link {
+          color: white;
+          text-transform: uppercase;
+          text-decoration: none;
+          padding-left: 0;
+          padding-bottom: 3px;
+          opacity: .8;
+          transition: opacity 0.1s;
+          &:hover {
+            opacity: 1;
+          }
+          &::after {
+            position: absolute;
+            left: 50%;
+            display: block;
+            width: 0;
+            height: 4px;
+            content: '';
+            transition: width .3s ease-in-out;
+            transform: translateX(-50%);
+            background-color: #fff;
+          }
+          &:hover::after, &:focus::after {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+  }
+
+  &-content {
+    display: inline-block;
+    margin-top: 90px;
+    position: relative;
+
+    &__imgs {
+      float: right;
+      position: absolute;
+      right: -135px;
+
+      .iphone {
+        width: 85%;
+        position: relative;
+        margin-bottom: -240px;
+
+        &__btn {
+          position: absolute;
+          right: 215px;
+        }
+
+        &__on {
+          position: absolute;
+          right: 175px;
+          top: 112px;
+          width: 54%;
+        }
+
+        .js-wp-3 {
+          opacity: 0;
+          animation-delay: 3.2s;
+          &.animated {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    .js-wp-2 {
+      opacity: 0;
+      &.animated {
+        opacity: 1;
+      }
+    }
+  }
+
+  &-info {
+    width: 60%;
+    padding-right: 150px;
+    float: left;
+
+    &__title {
+      color: white;
+      margin-bottom: 40px;
+
+    }
+
+    &__txt {
+      font-size: 36px;
+      line-height: 40px;
+      font-family: 'HelveticaNeue-Thin';
+      letter-spacing: .5px;
+      color: white;
+      margin-bottom: 55px;
+    }
+
+    &__btn {
+      @include btn;
+      padding: 23px 35px;
+      background: #282828;
+      transition: 0.3s;
+      &:hover {
+        background: #383737;
+        .phone-icon {
+          animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both infinite;
+        }
+      }
+
+      .phone-icon {
+        vertical-align: middle;
+        padding-right: 20px;
+
+      }
+
+    }
+  }
 
 }

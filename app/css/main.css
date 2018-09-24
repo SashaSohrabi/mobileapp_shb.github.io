@@ -1,4 +1,31 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@-webkit-keyframes shake {
+  10%, 90% {
+    -webkit-transform: translate3d(-1px, 0, 0);
+            transform: translate3d(-1px, 0, 0); }
+  20%, 80% {
+    -webkit-transform: translate3d(2px, 0, 0);
+            transform: translate3d(2px, 0, 0); }
+  30%, 50%, 70% {
+    -webkit-transform: translate3d(-4px, 0, 0);
+            transform: translate3d(-4px, 0, 0); }
+  40%, 60% {
+    -webkit-transform: translate3d(4px, 0, 0);
+            transform: translate3d(4px, 0, 0); } }
+@keyframes shake {
+  10%, 90% {
+    -webkit-transform: translate3d(-1px, 0, 0);
+            transform: translate3d(-1px, 0, 0); }
+  20%, 80% {
+    -webkit-transform: translate3d(2px, 0, 0);
+            transform: translate3d(2px, 0, 0); }
+  30%, 50%, 70% {
+    -webkit-transform: translate3d(-4px, 0, 0);
+            transform: translate3d(-4px, 0, 0); }
+  40%, 60% {
+    -webkit-transform: translate3d(4px, 0, 0);
+            transform: translate3d(4px, 0, 0); } }
+
 @font-face {
   font-family: 'HelveticaNeue-Thin';
   src: local("HelveticaNeue-Thin.otf"), url("../assets/fonts/HelveticaNeue-Thin.otf") format("opentype"); }
@@ -25,12 +52,164 @@ ol li {
   font-size: 17px;
   line-height: 24px; }
 
+h2 {
+  font-size: 52px;
+  font-weight: 700;
+  text-transform: uppercase; }
+
 a {
   text-decoration: none; }
 
 body {
   font-family: 'Montserrat', sans-serif; }
 
-h1 {
-  color: red;
-  margin: 0 80px; }
+.logo {
+  font-family: 'Olivier';
+  font-size: 52px;
+  color: #fff;
+  -webkit-transition: text-shadow .3s;
+  -o-transition: text-shadow .3s;
+  transition: text-shadow .3s; }
+
+.logo:hover {
+  text-shadow: 2px 2px 4px #000000; }
+
+.header {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(218, 51, 46, 0.6)), to(rgba(218, 51, 46, 0.6))), url("../images/png/hero-bg.png") fixed center;
+  background: -webkit-linear-gradient(rgba(218, 51, 46, 0.6), rgba(218, 51, 46, 0.6)), url("../images/png/hero-bg.png") fixed center;
+  background: -o-linear-gradient(rgba(218, 51, 46, 0.6), rgba(218, 51, 46, 0.6)), url("../images/png/hero-bg.png") fixed center;
+  background: linear-gradient(rgba(218, 51, 46, 0.6), rgba(218, 51, 46, 0.6)), url("../images/png/hero-bg.png") fixed center;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position: center;
+  background-attachment: fixed; }
+
+.header .container {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  padding: 40px 20px; }
+
+.header-logo {
+  float: left; }
+
+.header-menu__nav {
+  float: right; }
+
+.header-menu__nav .header-menu__item {
+  display: inline-block;
+  position: relative;
+  margin-left: 30px; }
+
+.header-menu__nav .header-menu__item .header-menu__link {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-left: 0;
+  padding-bottom: 3px;
+  opacity: .8;
+  -webkit-transition: opacity 0.1s;
+  -o-transition: opacity 0.1s;
+  transition: opacity 0.1s; }
+
+.header-menu__nav .header-menu__item .header-menu__link:hover {
+  opacity: 1; }
+
+.header-menu__nav .header-menu__item .header-menu__link::after {
+  position: absolute;
+  left: 50%;
+  display: block;
+  width: 0;
+  height: 4px;
+  content: '';
+  -webkit-transition: width .3s ease-in-out;
+  -o-transition: width .3s ease-in-out;
+  transition: width .3s ease-in-out;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #fff; }
+
+.header-menu__nav .header-menu__item .header-menu__link:hover::after, .header-menu__nav .header-menu__item .header-menu__link:focus::after {
+  width: 100%; }
+
+.header-content {
+  display: inline-block;
+  margin-top: 90px;
+  position: relative; }
+
+.header-content__imgs {
+  float: right;
+  position: absolute;
+  right: -135px; }
+
+.header-content__imgs .iphone {
+  width: 85%;
+  position: relative;
+  margin-bottom: -240px; }
+
+.header-content__imgs .iphone__btn {
+  position: absolute;
+  right: 215px; }
+
+.header-content__imgs .iphone__on {
+  position: absolute;
+  right: 175px;
+  top: 112px;
+  width: 54%; }
+
+.header-content__imgs .iphone .js-wp-3 {
+  opacity: 0;
+  -webkit-animation-delay: 3.2s;
+          animation-delay: 3.2s; }
+
+.header-content__imgs .iphone .js-wp-3.animated {
+  opacity: 1; }
+
+.header-content .js-wp-2 {
+  opacity: 0; }
+
+.header-content .js-wp-2.animated {
+  opacity: 1; }
+
+.header-info {
+  width: 60%;
+  padding-right: 150px;
+  float: left; }
+
+.header-info__title {
+  color: white;
+  margin-bottom: 40px; }
+
+.header-info__txt {
+  font-size: 36px;
+  line-height: 40px;
+  font-family: 'HelveticaNeue-Thin';
+  letter-spacing: .5px;
+  color: white;
+  margin-bottom: 55px; }
+
+.header-info__btn {
+  color: white;
+  text-decoration: none;
+  -webkit-border-radius: 50px;
+          border-radius: 50px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  padding: 23px 35px;
+  background: #282828;
+  transition: 0.3s; }
+
+.header-info__btn:hover {
+  background: #383737; }
+
+.header-info__btn:hover .phone-icon {
+  -webkit-animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both infinite;
+          animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both infinite; }
+
+.header-info__btn .phone-icon {
+  vertical-align: middle;
+  padding-right: 20px; }

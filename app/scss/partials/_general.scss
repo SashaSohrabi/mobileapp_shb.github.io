@@ -23,10 +23,27 @@ ol li {
   line-height: 24px;
 }
 
+h2 {
+  font-size: 52px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 a {
   text-decoration: none;
 }
 
 body {
   font-family: 'Montserrat', sans-serif;
+}
+
+.logo {
+  font-family: 'Olivier';
+  font-size: 52px;
+  color: #fff;
+  transition: text-shadow .3s;
+
+  &:hover {
+    text-shadow: 2px 2px 4px #000000;
+  }
 }
