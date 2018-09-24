@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 @font-face {
   font-family: 'HelveticaNeue-Thin';
   src: local("HelveticaNeue-Thin.otf"), url("../assets/fonts/HelveticaNeue-Thin.otf") format("opentype"); }
@@ -29,3 +30,7 @@ a {
 
 body {
   font-family: 'Montserrat', sans-serif; }
+
+h1 {
+  color: red;
+  margin: 0 80px; }

@@ -1,10 +1,4 @@
-@import "sections/header";
-@import "sections/app-features";
-@import "sections/brands";
-@import "sections/hero";
-@import "sections/footer";
-@import "sections/copyright";
-
+@include google-font('Montserrat:400,700');
 @include helveticaNeueThin;
 @include olivier;
 
