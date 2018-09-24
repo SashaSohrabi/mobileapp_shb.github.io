@@ -1,31 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
-@-webkit-keyframes shake {
-  10%, 90% {
-    -webkit-transform: translate3d(-1px, 0, 0);
-            transform: translate3d(-1px, 0, 0); }
-  20%, 80% {
-    -webkit-transform: translate3d(2px, 0, 0);
-            transform: translate3d(2px, 0, 0); }
-  30%, 50%, 70% {
-    -webkit-transform: translate3d(-4px, 0, 0);
-            transform: translate3d(-4px, 0, 0); }
-  40%, 60% {
-    -webkit-transform: translate3d(4px, 0, 0);
-            transform: translate3d(4px, 0, 0); } }
-@keyframes shake {
-  10%, 90% {
-    -webkit-transform: translate3d(-1px, 0, 0);
-            transform: translate3d(-1px, 0, 0); }
-  20%, 80% {
-    -webkit-transform: translate3d(2px, 0, 0);
-            transform: translate3d(2px, 0, 0); }
-  30%, 50%, 70% {
-    -webkit-transform: translate3d(-4px, 0, 0);
-            transform: translate3d(-4px, 0, 0); }
-  40%, 60% {
-    -webkit-transform: translate3d(4px, 0, 0);
-            transform: translate3d(4px, 0, 0); } }
-
 @font-face {
   font-family: 'HelveticaNeue-Thin';
   src: local("HelveticaNeue-Thin.otf"), url("../assets/fonts/HelveticaNeue-Thin.otf") format("opentype"); }
@@ -143,7 +116,11 @@ body {
 .header-content__imgs {
   float: right;
   position: absolute;
-  right: -135px; }
+  right: -135px;
+  opacity: 0; }
+
+.header-content__imgs.animated {
+  opacity: 1; }
 
 .header-content__imgs .iphone {
   width: 85%;
@@ -158,20 +135,12 @@ body {
   position: absolute;
   right: 175px;
   top: 112px;
-  width: 54%; }
-
-.header-content__imgs .iphone .js-wp-3 {
+  width: 54%;
   opacity: 0;
   -webkit-animation-delay: 3.2s;
           animation-delay: 3.2s; }
 
-.header-content__imgs .iphone .js-wp-3.animated {
-  opacity: 1; }
-
-.header-content .js-wp-2 {
-  opacity: 0; }
-
-.header-content .js-wp-2.animated {
+.header-content__imgs .iphone__on.animated {
   opacity: 1; }
 
 .header-info {
@@ -213,3 +182,31 @@ body {
 .header-info__btn .phone-icon {
   vertical-align: middle;
   padding-right: 20px; }
+
+@-webkit-keyframes shake {
+  10%, 90% {
+    -webkit-transform: translate3d(-1px, 0, 0);
+            transform: translate3d(-1px, 0, 0); }
+  20%, 80% {
+    -webkit-transform: translate3d(2px, 0, 0);
+            transform: translate3d(2px, 0, 0); }
+  30%, 50%, 70% {
+    -webkit-transform: translate3d(-4px, 0, 0);
+            transform: translate3d(-4px, 0, 0); }
+  40%, 60% {
+    -webkit-transform: translate3d(4px, 0, 0);
+            transform: translate3d(4px, 0, 0); } }
+
+@keyframes shake {
+  10%, 90% {
+    -webkit-transform: translate3d(-1px, 0, 0);
+            transform: translate3d(-1px, 0, 0); }
+  20%, 80% {
+    -webkit-transform: translate3d(2px, 0, 0);
+            transform: translate3d(2px, 0, 0); }
+  30%, 50%, 70% {
+    -webkit-transform: translate3d(-4px, 0, 0);
+            transform: translate3d(-4px, 0, 0); }
+  40%, 60% {
+    -webkit-transform: translate3d(4px, 0, 0);
+            transform: translate3d(4px, 0, 0); } }

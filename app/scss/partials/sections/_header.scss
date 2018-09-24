@@ -15,6 +15,10 @@
   &-menu {
     $self: &;
 
+    &__burger-nav {
+
+    }
+
     &__nav {
       float: right;
 
@@ -63,38 +67,32 @@
       float: right;
       position: absolute;
       right: -135px;
+      opacity: 0;
+      &.animated {
+        opacity: 1;
+      }
 
       .iphone {
         width: 85%;
         position: relative;
         margin-bottom: -240px;
-
-        &__btn {
-          position: absolute;
-          right: 215px;
-        }
-
-        &__on {
-          position: absolute;
-          right: 175px;
-          top: 112px;
-          width: 54%;
-        }
-
-        .js-wp-3 {
-          opacity: 0;
-          animation-delay: 3.2s;
-          &.animated {
-            opacity: 1;
-          }
-        }
       }
-    }
 
-    .js-wp-2 {
-      opacity: 0;
-      &.animated {
-        opacity: 1;
+      .iphone__btn {
+        position: absolute;
+        right: 215px;
+      }
+
+      .iphone__on {
+        position: absolute;
+        right: 175px;
+        top: 112px;
+        width: 54%;
+        opacity: 0;
+        animation-delay: 3.2s;
+        &.animated {
+          opacity: 1;
+        }
       }
     }
   }
@@ -139,5 +137,23 @@
 
     }
   }
-
 }
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
