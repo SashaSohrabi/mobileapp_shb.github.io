@@ -551,3 +551,52 @@ body {
   font-family: 'HelveticaNeue-Thin';
   letter-spacing: .5px;
   margin-bottom: 50px; }
+
+#hero .container .hov {
+  position: relative;
+  overflow: hidden;
+  z-index: 5; }
+
+#hero .container .hov::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding-top: 2px;
+  -webkit-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+          transform: translateX(-100%);
+  background: #282828;
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: -webkit-transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  -o-transition: transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+
+#hero .container .hov::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding-top: 2px;
+  color: #fcfcfc;
+  -webkit-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.16, 0.73, 0.58, 0.62) 0.3s;
+  transition: -webkit-transform 0.3s cubic-bezier(0.16, 0.73, 0.58, 0.62) 0.3s;
+  -o-transition: transform 0.3s cubic-bezier(0.16, 0.73, 0.58, 0.62) 0.3s;
+  transition: transform 0.3s cubic-bezier(0.16, 0.73, 0.58, 0.62) 0.3s;
+  transition: transform 0.3s cubic-bezier(0.16, 0.73, 0.58, 0.62) 0.3s, -webkit-transform 0.3s cubic-bezier(0.16, 0.73, 0.58, 0.62) 0.3s;
+  content: "Download!";
+  top: 30%; }
+
+#hero .container .hov:hover:after, #hero .container .hov:hover:before {
+  padding-top: 2px;
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0); }

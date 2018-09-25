@@ -30,14 +30,12 @@
   }
 }
 
-
 // === GOOGLE FONTS ===
 
 @mixin google-font($font) {
   $font: unquote($font);
   @import url(https://fonts.googleapis.com/css?family=#{$font});
 }
-
 
 // === FONTS ===
 
@@ -55,7 +53,6 @@
   }
 }
 
-
 // === BUTTON ===
 
 @mixin btn() {
@@ -63,6 +60,15 @@
   text-decoration: none;
   border-radius: 50px;
   transition: 0.3s;
+}
+
+@mixin hero-btn() {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
 
 // === CONTAINER ===

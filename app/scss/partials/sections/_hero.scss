@@ -44,5 +44,30 @@
         }
       }
     }
+    .hov {
+      position: relative;
+      overflow: hidden;
+      z-index: 5;
+      &::before {
+        @include hero-btn;
+        padding-top: 2px;
+        transform: translateX(-100%);
+        background: #282828;
+        transition: transform .3s cubic-bezier(.55, .055, .675, .19);
+      }
+      &::after {
+        @include hero-btn;
+        padding-top: 2px;
+        color: #fcfcfc;
+        transform: translateX(100%);
+        transition: transform .3s cubic-bezier(.16, .73, .58, .62) .3s;
+        content: "Download!";
+        top: 30%;
+      }
+    }
+    .hov:hover:after, .hov:hover:before {
+      padding-top: 2px;
+      transform: translateX(0);
+    }
   }
 }
