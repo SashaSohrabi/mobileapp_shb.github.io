@@ -1,0 +1,42 @@
+#hero {
+  background: url('../assets/images/png/nose-bg.png');
+  background-size: cover;
+  background-position: center;
+
+  .container {
+    @include container;
+    .download {
+      width: 50%;
+      padding: 200px 0;
+      &__btn {
+        @include btn;
+        display: inline-block;
+        margin-left: 20px;
+        cursor: pointer;
+        border-radius: 50px;
+        text-align: center;
+        white-space: nowrap;
+        padding: 15px;
+        /*min-width: 160px;*/
+        color: #fff;
+        background-color: #d9332d;
+      }
+      .hero {
+        &__title {
+          margin-bottom: 40px;
+          color: white;
+          &--reddish {
+            color: #f55150;
+          }
+        }
+        &__txt {
+          font-size: 24px;
+          line-height: 30px;
+          font-family: 'HelveticaNeue-Thin';
+          letter-spacing: .5px;
+          margin-bottom: 50px;
+        }
+      }
+    }
+  }
+}

@@ -492,3 +492,54 @@ body {
 @media only screen and (max-width: 576px) {
   #brands #brands-menu .brands-menu__list .brands-menu__item .brands-menu__txt {
     margin-left: 10px; } }
+
+#hero {
+  background: url("../assets/images/png/nose-bg.png");
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position: center; }
+
+#hero .container {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  padding: 40px 20px; }
+
+#hero .container .download {
+  width: 50%;
+  padding: 200px 0; }
+
+#hero .container .download__btn {
+  color: white;
+  text-decoration: none;
+  -webkit-border-radius: 50px;
+          border-radius: 50px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  display: inline-block;
+  margin-left: 20px;
+  cursor: pointer;
+  border-radius: 50px;
+  text-align: center;
+  white-space: nowrap;
+  padding: 15px;
+  /*min-width: 160px;*/
+  color: #fff;
+  background-color: #d9332d; }
+
+#hero .container .download .hero__title {
+  margin-bottom: 40px;
+  color: white; }
+
+#hero .container .download .hero__title--reddish {
+  color: #f55150; }
+
+#hero .container .download .hero__txt {
+  font-size: 24px;
+  line-height: 30px;
+  font-family: 'HelveticaNeue-Thin';
+  letter-spacing: .5px;
+  margin-bottom: 50px; }
