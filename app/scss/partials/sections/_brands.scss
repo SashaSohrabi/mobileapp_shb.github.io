@@ -19,7 +19,7 @@
       padding: 150px 100px 200px;
     }
 
-    @include large-screens {
+    @include medium-large-screens {
       grid-template-columns: 100%;
       padding-top: 80px;
       padding-bottom: 320px;
@@ -32,7 +32,7 @@
       max-width: 1000px;
       padding: 0 50px;
 
-      @include large-screens {
+      @include medium-large-screens {
         margin-bottom: 100px;
         text-align: center;
       }

@@ -14,18 +14,57 @@
 
   &-menu {
     $self: &;
+    @include medium-large-screens {
+      overflow: hidden;
+      position: absolute;
+      right: 30px;
+      top: 50px;
+      display: block;
+      z-index: 1000;
+    }
 
     &__burger-nav {
-
+      @include medium-large-screens {
+        background: url(../assets/images/png/hamburger.png) no-repeat 100% center;
+        display: block;
+        height: 31px;
+        width: 40px;
+        cursor: pointer;
+        float: right;
+        margin-bottom: 10px;
+      }
     }
 
     &__nav {
       float: right;
+      @include medium-large-screens {
+        height: 0;
+        overflow: hidden;
+        background: #282828;
+        border-radius: 5px;
+      }
+
+      &.open {
+        @include medium-large-screens {
+          height: auto;
+          clear: both;
+        }
+      }
 
       #{ $self }__item {
         display: inline-block;
         position: relative;
         margin-left: 30px;
+        @include large-screens {
+          margin: 5px;
+        }
+        @include medium-large-screens {
+          float: none;
+          text-align: right;
+          width: auto;
+          margin: 0;
+          display: block;
+        }
 
         #{ $self }__link {
           color: white;
@@ -35,8 +74,19 @@
           padding-bottom: 3px;
           opacity: .8;
           transition: opacity 0.1s;
+          @include medium-large-screens {
+            color: white;
+            padding: 10px;
+            display: block;
+            margin: 0;
+          }
+
           &:hover {
             opacity: 1;
+            @include medium-large-screens {
+              border: none;
+            }
+
           }
           &::after {
             position: absolute;
@@ -51,11 +101,13 @@
           }
           &:hover::after, &:focus::after {
             width: 100%;
+            @include medium-large-screens {
+              width: 0;
+            }
           }
         }
       }
     }
-
   }
 
   &-content {
@@ -76,11 +128,17 @@
         width: 85%;
         position: relative;
         margin-bottom: -240px;
+        @include medium-large-screens {
+          display: none;
+        }
       }
 
       .iphone__btn {
         position: absolute;
         right: 215px;
+        @include medium-large-screens {
+          display: none;
+        }
       }
 
       .iphone__on {
@@ -90,6 +148,9 @@
         width: 54%;
         opacity: 0;
         animation-delay: 3.2s;
+        @include medium-large-screens {
+          display: none;
+        }
         &.animated {
           opacity: 1;
         }
@@ -99,8 +160,13 @@
 
   &-info {
     width: 60%;
-    padding-right: 150px;
+    padding-right: 50px;
     float: left;
+    @include medium-large-screens {
+      width: 100%;
+      padding-right: unset;
+      text-align: center;
+    }
 
     &__title {
       color: white;
@@ -125,7 +191,7 @@
       &:hover {
         background: #383737;
         .phone-icon {
-          animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both infinite;
+          animation: toShake 0.82s cubic-bezier(.36, .07, .19, .97) both infinite;
         }
       }
 
@@ -139,7 +205,7 @@
   }
 }
 
-@keyframes shake {
+@keyframes toShake {
   10%, 90% {
     transform: translate3d(-1px, 0, 0);
   }
@@ -156,4 +222,5 @@
     transform: translate3d(4px, 0, 0);
   }
 }
+
 
