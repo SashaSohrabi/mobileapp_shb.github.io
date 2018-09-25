@@ -509,7 +509,15 @@ body {
 
 #hero .container .download {
   width: 50%;
-  padding: 200px 0; }
+  padding: 200px 0;
+  position: relative;
+  left: -100%;
+  -webkit-transition: 1s ease-out;
+  -o-transition: 1s ease-out;
+  transition: 1s ease-out; }
+
+#hero .container .download.animation {
+  left: 0; }
 
 #hero .container .download__btn {
   color: white;
