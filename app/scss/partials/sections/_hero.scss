@@ -3,7 +3,11 @@
   background-size: cover;
   background-position: center;
 
+
   .container {
+    @include medium-large-screens {
+      background-color: #d7dedc;
+    }
     @include container;
     .download {
       width: 50%;
@@ -11,6 +15,13 @@
       position: relative;
       left: -100%;
       transition: 1s ease-out;
+      @include large-screens {
+        width: 70%;
+      }
+      @include medium-large-screens{
+        width: 100%;
+        padding: 100px 0;
+      }
       &.animation {
         left: 0;
       }
@@ -65,7 +76,7 @@
         top: 30%;
       }
     }
-    .hov:hover:after, .hov:hover:before {
+    .hov:hover::after, .hov:hover::before {
       padding-top: 2px;
       transform: translateX(0);
     }

@@ -507,6 +507,10 @@ body {
   overflow: hidden;
   padding: 40px 20px; }
 
+@media only screen and (max-width: 820px) {
+  #hero .container {
+    background-color: #d7dedc; } }
+
 #hero .container .download {
   width: 50%;
   padding: 200px 0;
@@ -515,6 +519,15 @@ body {
   -webkit-transition: 1s ease-out;
   -o-transition: 1s ease-out;
   transition: 1s ease-out; }
+
+@media only screen and (max-width: 992px) {
+  #hero .container .download {
+    width: 70%; } }
+
+@media only screen and (max-width: 820px) {
+  #hero .container .download {
+    width: 100%;
+    padding: 100px 0; } }
 
 #hero .container .download.animation {
   left: 0; }
@@ -595,7 +608,7 @@ body {
   content: "Download!";
   top: 30%; }
 
-#hero .container .hov:hover:after, #hero .container .hov:hover:before {
+#hero .container .hov:hover::after, #hero .container .hov:hover::before {
   padding-top: 2px;
   -webkit-transform: translateX(0);
       -ms-transform: translateX(0);
