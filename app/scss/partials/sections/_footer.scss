@@ -1,6 +1,10 @@
 .footer {
   $self: &;
   background-color: #2e2e38;
+
+  &__logo {
+      margin-bottom: 35px;
+  }
   .container {
     @include container;
     padding: 120px 20px;
@@ -11,6 +15,12 @@
       margin-top: 77px;
       color: white;
       padding: 30px;
+      @include medium-screens {
+        width: 100%;
+        float: none;
+        margin-top: 0;
+        font-weight: 400;
+      }
       .col__title {
         font-size: 20px;
       }
