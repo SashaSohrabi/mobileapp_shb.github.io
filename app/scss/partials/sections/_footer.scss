@@ -1,0 +1,58 @@
+.footer {
+  $self: &;
+  background-color: #2e2e38;
+  .container {
+    @include container;
+    padding: 120px 20px;
+
+    #{ $self }__col {
+      width: 33.33%;
+      float: left;
+      margin-top: 77px;
+      color: white;
+      padding: 30px;
+      .col__title {
+        font-size: 20px;
+      }
+
+      .posts {
+        margin-top: 25px;
+        font-family: 'HelveticaNeue-Thin';
+        letter-spacing: .5px;
+        &__item {
+          background: url('../assets/images/png/rectangle.png') no-repeat;
+          font-size: 15px;
+          line-height: 20px;
+          margin-bottom: 5px;
+          padding-left: 70px;
+        }
+        .block {
+          display: block;
+        }
+      }
+
+      .tweets {
+        margin-top: 25px;
+        font-family: 'HelveticaNeue-Thin';
+        letter-spacing: .5px;
+        &__item {
+          list-style: none;
+          margin-bottom: 25px;
+        }
+        &--sm-txt {
+          display: block;
+          font-size: 11px;
+          margin-top: 5px;
+        }
+      }
+    }
+
+    .about-txt {
+      font-family: 'HelveticaNeue-Thin';
+      letter-spacing: .5px;
+      font-size: 15px;
+      font-style: italic;
+      margin-top: 25px;
+    }
+  }
+}

@@ -613,3 +613,61 @@ body {
   -webkit-transform: translateX(0);
       -ms-transform: translateX(0);
           transform: translateX(0); }
+
+.footer {
+  background-color: #2e2e38; }
+
+.footer .container {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  padding: 40px 20px;
+  padding: 120px 20px; }
+
+.footer .container .footer__col {
+  width: 33.33%;
+  float: left;
+  margin-top: 77px;
+  color: white;
+  padding: 30px; }
+
+.footer .container .footer__col .col__title {
+  font-size: 20px; }
+
+.footer .container .footer__col .posts {
+  margin-top: 25px;
+  font-family: 'HelveticaNeue-Thin';
+  letter-spacing: .5px; }
+
+.footer .container .footer__col .posts__item {
+  background: url("../assets/images/png/rectangle.png") no-repeat;
+  font-size: 15px;
+  line-height: 20px;
+  margin-bottom: 5px;
+  padding-left: 70px; }
+
+.footer .container .footer__col .posts .block {
+  display: block; }
+
+.footer .container .footer__col .tweets {
+  margin-top: 25px;
+  font-family: 'HelveticaNeue-Thin';
+  letter-spacing: .5px; }
+
+.footer .container .footer__col .tweets__item {
+  list-style: none;
+  margin-bottom: 25px; }
+
+.footer .container .footer__col .tweets--sm-txt {
+  display: block;
+  font-size: 11px;
+  margin-top: 5px; }
+
+.footer .container .about-txt {
+  font-family: 'HelveticaNeue-Thin';
+  letter-spacing: .5px;
+  font-size: 15px;
+  font-style: italic;
+  margin-top: 25px; }
