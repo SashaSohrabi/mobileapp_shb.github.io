@@ -15,8 +15,12 @@
     align-self: center;
     padding: 150px 100px;
 
-    @include extra-large-screens {
+    /*@include extra-large-screens {
       padding: 150px 100px 200px;
+    }*/
+
+    @include large-screens {
+      padding-bottom: 100px;
     }
 
     @include medium-large-screens {
