@@ -681,3 +681,49 @@ body {
   font-size: 15px;
   font-style: italic;
   margin-top: 25px; }
+
+.copyright {
+  background-color: #d7dedc; }
+
+.copyright .container {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  padding: 40px 20px;
+  padding: 40px;
+  text-align: center; }
+
+.copyright .container .copyright__txt {
+  margin-right: 40px; }
+
+.copyright .container .copyright__txt::after {
+  content: "";
+  border: 1px solid #555555;
+  margin-left: 35px; }
+
+@media only screen and (max-width: 576px) {
+  .copyright .container .copyright__txt::after {
+    display: none; } }
+
+.copyright .container .inline {
+  display: inline-block;
+  font-size: 15px;
+  vertical-align: middle; }
+
+.copyright .fb,
+.copyright .tw {
+  margin-right: 40px; }
+
+.copyright .fab {
+  font-size: 30px; }
+
+.copyright .fb {
+  color: #44609f; }
+
+.copyright .tw {
+  color: #3196ce; }
+
+.copyright .dr {
+  color: #dd3c7c; }

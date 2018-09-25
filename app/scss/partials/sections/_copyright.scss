@@ -1,0 +1,47 @@
+.copyright {
+  $self: &;
+  background-color: #d7dedc;
+  .container {
+    @include container;
+    padding: 40px;
+    text-align: center;
+    #{ $self }__txt {
+      margin-right: 40px;
+      &::after {
+        content: "";
+        border: 1px solid #555555;
+        margin-left: 35px;
+        @include small-screens {
+          display: none;
+        }
+      }
+    }
+    .inline {
+      display: inline-block;
+      font-size: 15px;
+      vertical-align: middle;
+    }
+  }
+
+  .fb,
+  .tw {
+    margin-right: 40px;
+  }
+
+  .fab {
+    font-size: 30px;
+  }
+
+  .fb {
+    color: #44609f;
+  }
+
+  .tw {
+    color: #3196ce;
+  }
+
+  .dr {
+    color: #dd3c7c;
+  }
+
+}
