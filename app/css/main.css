@@ -377,8 +377,8 @@ body {
   align-self: center;
   padding: 150px 100px;
   /*@include extra-large-screens {
-      padding: 150px 100px 200px;
-    }*/ }
+          padding: 150px 100px 200px;
+        }*/ }
 
 @media only screen and (max-width: 992px) {
   #brands .brand-wrapper {
@@ -431,6 +431,9 @@ body {
 @media only screen and (max-width: 576px) {
   #brands #brands-menu {
     margin: 0 auto;
+    -webkit-transform: translateX(-25%);
+        -ms-transform: translateX(-25%);
+            transform: translateX(-25%);
     width: 80%; } }
 
 #brands #brands-menu .brands-menu__list {
@@ -449,6 +452,10 @@ body {
   position: absolute;
   border-bottom: 4px solid rgba(0, 0, 0, 0.2);
   mix-blend-mode: multiply; }
+
+@media only screen and (max-width: 576px) {
+  #brands #brands-menu .brands-menu__list .brands-menu__item {
+    min-width: 300px; } }
 
 #brands #brands-menu .brands-menu__list .brands-menu__item:nth-child(1) {
   background: #bfe8fc;
@@ -476,6 +483,10 @@ body {
 
 #brands #brands-menu .brands-menu__list .brands-menu__item .brands-menu__img {
   width: 70px; }
+
+@media only screen and (max-width: 576px) {
+  #brands #brands-menu .brands-menu__list .brands-menu__item .brands-menu__img {
+    padding-right: 15px; } }
 
 #brands #brands-menu .brands-menu__list .brands-menu__item .brands-menu__link {
   font-family: 'HelveticaNeue-Thin';
