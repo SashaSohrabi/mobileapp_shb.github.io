@@ -1,4 +1,4 @@
-# mobileapp_shb.github.io [Click me]( https://sashasohrabi.github.io/mobileapp_shb.github.io/app/)
+# mobileapp_shb.github.io [Click here]( https://sashasohrabi.github.io/mobileapp_shb.github.io/app/)
 
 ## How to **install** project
 
