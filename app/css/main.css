@@ -9,7 +9,8 @@
 
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+          box-sizing: border-box;
+  scroll-behavior: smooth; }
 
 strong,
 b {
@@ -34,15 +35,15 @@ a {
   text-decoration: none; }
 
 body {
-  font-family: 'Montserrat', sans-serif; }
+  font-family: "Montserrat", sans-serif; }
 
 .logo {
-  font-family: 'Olivier';
+  font-family: "Olivier";
   font-size: 52px;
   color: #fff;
-  -webkit-transition: text-shadow .3s;
-  -o-transition: text-shadow .3s;
-  transition: text-shadow .3s; }
+  -webkit-transition: text-shadow 0.3s;
+  -o-transition: text-shadow 0.3s;
+  transition: text-shadow 0.3s; }
 
 .logo:hover {
   text-shadow: 2px 2px 4px #000000; }

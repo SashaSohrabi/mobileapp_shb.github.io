@@ -1,9 +1,10 @@
-@include google-font('Montserrat:400,700');
+@include google-font("Montserrat:400,700");
 @include helveticaNeueThin;
 @include olivier;
 
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 strong,
@@ -34,18 +35,16 @@ a {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .logo {
-  font-family: 'Olivier';
+  font-family: "Olivier";
   font-size: 52px;
   color: #fff;
-  transition: text-shadow .3s;
+  transition: text-shadow 0.3s;
 
   &:hover {
     text-shadow: 2px 2px 4px #000000;
   }
 }
-
-
