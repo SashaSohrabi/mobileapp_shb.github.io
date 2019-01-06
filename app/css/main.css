@@ -304,8 +304,8 @@ body {
   margin-bottom: 40px; }
 
 .app-features__txt {
-  font-family: 'HelveticaNeue-Thin';
-  letter-spacing: .5px;
+  font-family: "HelveticaNeue-Thin";
+  letter-spacing: 0.5px;
   font-size: 22px;
   line-height: 28px;
   padding: 0 130px; }
@@ -329,11 +329,12 @@ body {
     margin: 15px 0; } }
 
 .features-wrapper__txt {
-  font-family: 'HelveticaNeue-Thin';
-  letter-spacing: .5px;
-  font-size: 18px;
+  font-family: "HelveticaNeue-Thin";
+  letter-spacing: 0.5px;
+  font-size: 16px;
   line-height: 24px;
-  color: #646464; }
+  color: #646464;
+  text-align: justify; }
 
 .features-wrapper__col {
   width: 33.33%;
@@ -353,7 +354,10 @@ body {
           border-radius: 50%;
   overflow: hidden;
   width: 180px;
-  height: 180px; }
+  height: 180px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
 
 .features-wrapper__img-svg:hover {
   -webkit-transform: scale3d(1.1, 1.1, 1.1);

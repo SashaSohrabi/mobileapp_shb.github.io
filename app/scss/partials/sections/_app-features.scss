@@ -11,8 +11,8 @@
   }
 
   &__txt {
-    font-family: 'HelveticaNeue-Thin';
-    letter-spacing: .5px;
+    font-family: "HelveticaNeue-Thin";
+    letter-spacing: 0.5px;
     font-size: 22px;
     line-height: 28px;
     padding: 0 130px;
@@ -37,11 +37,12 @@
   }
 
   &__txt {
-    font-family: 'HelveticaNeue-Thin';
-    letter-spacing: .5px;
-    font-size: 18px;
+    font-family: "HelveticaNeue-Thin";
+    letter-spacing: 0.5px;
+    font-size: 16px;
     line-height: 24px;
     color: #646464;
+    text-align: justify;
   }
 
   &__col {
@@ -62,6 +63,7 @@
     overflow: hidden;
     width: 180px;
     height: 180px;
+    transition: all 0.3s;
     &:hover {
       transform: scale3d(1.1, 1.1, 1.1);
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
