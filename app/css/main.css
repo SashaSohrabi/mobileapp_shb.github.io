@@ -629,6 +629,9 @@ body {
 .footer {
   background-color: #2e2e38; }
 
+.footer a {
+  color: inherit; }
+
 .footer__logo {
   margin-bottom: 35px; }
 
@@ -660,8 +663,8 @@ body {
 
 .footer .container .footer__col .posts {
   margin-top: 25px;
-  font-family: 'HelveticaNeue-Thin';
-  letter-spacing: .5px; }
+  font-family: "HelveticaNeue-Thin";
+  letter-spacing: 0.5px; }
 
 .footer .container .footer__col .posts__item {
   background: url("../assets/images/png/rectangle.png") no-repeat;
@@ -675,8 +678,8 @@ body {
 
 .footer .container .footer__col .tweets {
   margin-top: 25px;
-  font-family: 'HelveticaNeue-Thin';
-  letter-spacing: .5px; }
+  font-family: "HelveticaNeue-Thin";
+  letter-spacing: 0.5px; }
 
 .footer .container .footer__col .tweets__item {
   list-style: none;
@@ -688,8 +691,8 @@ body {
   margin-top: 5px; }
 
 .footer .container .about-txt {
-  font-family: 'HelveticaNeue-Thin';
-  letter-spacing: .5px;
+  font-family: "HelveticaNeue-Thin";
+  letter-spacing: 0.5px;
   font-size: 15px;
   font-style: italic;
   margin-top: 25px; }
